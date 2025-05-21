@@ -1,0 +1,13 @@
+<div>
+    <app-logo></app-logo>
+    {{ nome }} <!-- mi legge il nome della proprietà nome che ho definito nel componente header -->
+    <h2>
+        Il mio animale si chiama <strong>{{ animale.nome }}</strong> ed è un {{ animale.razza }}
+    </h2>
+    <h2>
+        Prodotto: {{ prodotto?.nome }} <!-- sarà undefined se non ho definito prodotto -->
+        <hr>
+        Bici: {{ bici!.nome }} <!-- il ! mi darà il valore del nome ma non le proprietà id, prezzo e inOfferta -->
+    </h2>
+</div>
+<hr>
