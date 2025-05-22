@@ -18,18 +18,18 @@ export class HeaderComponent {
   prodotto?: Prodotto; // il ? indica che la proprietà è opzionale, significa che assume o il tipo prodotto o il tipo undefined -> attualmente è undefined
 
   bici?: Prodotto = {
-      id: 1,
       nome: "Bicicletta",
       prezzo: 150,
-      inOfferta: false
+      desc: "Test",
+      foto: ""
     }; 
 
   esempio(){
     this.prodotto = {
-      id: 1,
+      desc: "Test",
+      foto: "",
       nome: "Bicicletta",
       prezzo: 150,
-      inOfferta: false
     };
 
     let eta = 16;
