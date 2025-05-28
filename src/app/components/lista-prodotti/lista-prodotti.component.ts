@@ -15,4 +15,8 @@ export class ListaProdottiComponent {
 
   @Input()
   titolo: string = ""
+
+  selezionaProdotto(p: Prodotto){ // Evento per la selezione di un prodotto
+    console.log("Prodotto selezionato", p.nome); 
+  }
 }

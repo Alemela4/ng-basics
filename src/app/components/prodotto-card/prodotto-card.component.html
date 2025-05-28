@@ -1,5 +1,5 @@
 @if (prodotto) {
-<div class="card" style="width: 10rem;">
+<div class="card" style="width: 18rem;">
   <img [src]= "prodotto.foto" class="card-img-top" [alt]= "prodotto.nome">
   <div class="card-body">
     <h5 class="card-title" 
@@ -9,6 +9,8 @@
     </h5>
     <h6 class="card-subtitle mb-2 text-body-secondary">{{ prodotto.prezzo | currency : "EUR" : "code" : "1.2-2" }}</h6>
     <p class="card-text">{{ prodotto.desc }}</p>
+    <button class="btn btn-primary" (click)= "saluta()">Saluta</button>
+    <button class="btn btn-warning" (click)= "scatenaEvento()">Seleziona prodotto</button>
   </div>
 </div>
 } @else {
